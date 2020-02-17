@@ -9,20 +9,62 @@ h1{
     text-justify: inter-ideograph;
     font-family: 'Sacramento', cursive;
   }
+
   
-  #topbtn{
+  
+  i{
+    color: #FFF;
+  }
+
+  .fa-facebook{
     position: absolute;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  text-decoration: none;
+    right: 200px;
+    top: 70px;
+  }
+
+  .fa-twitter{
+    position: absolute;
+    right: 150px;
+    top: 70px;
+  }
+
+  .fa-github{
+    position: absolute;
+    right: 105px;
+    top: 70px;
+  }
+
+  #topright{
+    position: absolute;
+    right: 125px;
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+    color: #FFF;
+    height: 500px;
+    position: absolute;
+    top: 450px;
+  }
+
+  .btn-gradient-simple {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+    transition: .4s;
+  }
+  
+  .btn-gradient-simple:hover {
+    background-image: linear-gradient(45deg, #709dff 50%, #b0c9ff 100%);
   }
   
   #btn_wrapper{
     text-align: center;
+    position: relative;
+    top: 50px;
   }
   
   #wrapper{
@@ -193,25 +235,25 @@ h1{
   
   #homelink{
     position: relative;
-    left: 5%;
-    bottom: 300px;
+    left: 10%;
+    bottom: 350px;
   }
   
   #aboutlink{
   position: relative;
-  left: 5%;
-  bottom: 250px;
+  left:  10%;
+  bottom: 280px;
   }
   
   
   #skilllink{
     position: relative;
-    left: 5%;
-    bottom: 200px;
+    left: 10%;
+    bottom: 210px;
   }
   
   #contactlink{
     position: relative;
-    left: 5%;
-    bottom: 150px;
+    left: 10%;
+    bottom: 140px;
   }

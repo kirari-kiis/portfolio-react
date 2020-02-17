@@ -36,8 +36,12 @@ class Portfolio extends Component{
             <div id='slide'>
             <div id='top'>
             <p id='name'>KIRARI INAOKA</p>
+            <i className="fab fa-facebook fa-2x"><a id="facebook" href="#"></a></i>
+            <i className="fab fa-twitter fa-2x"><a id="twitter" href="#"></a></i>
+            <i className="fab fa-github fa-2x"><a id="github" href="#"></a></i>
             <h1>Portfolio</h1>
-            <div id='btn_wrapper'><button id='topbtn'>Go!</button></div>
+            <p id="topright">I'm in The Kyushu Institute of Information Sciences</p>
+            <div id='btn_wrapper'><a href="#about" className="btn-gradient-simple">BUTTON</a></div>
             <LinkButton actionSlide={(entry) => this.slide(entry)} />
             
                 <div id='about'>
