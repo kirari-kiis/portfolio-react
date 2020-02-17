@@ -1,13 +1,217 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+h1{
+    color:white;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 500px;
+    font-size: 150px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-family: 'Sacramento', cursive;
+  }
+  
+  #topbtn{
+    position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-decoration: none;
+  }
+  
+  #btn_wrapper{
+    text-align: center;
+  }
+  
+  #wrapper{
+    height: 3500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  
+  
+  #back{
+    background: url(./images/top.jpg) no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 1000px;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  
+  #name{
+    color: aliceblue;
+    position: relative;
+    left: 13%;
+    top: 0px;
+    width: 500px;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 5px;
+  }
+  
+  #top{
+    
+    width: 100%;
+    height: 700px;
+  }
+  
+  #about{
+    background-color: aquamarine;
+    width: 90%;
+    height: 700px;
+    margin: 30px auto;
+    margin-top: 200px;
+  
+  }
+  
+  #skill{
+    background-color: rgb(79, 114, 255);
+    width: 90%;
+    height: 700px;
+    margin: 30px auto;
+  }
+  
+  #contact{
+    background-color: rgb(212, 127, 255);
+    width: 90%;
+    height: 700px;
+    margin: 30px auto;
+  }
+  
+  #slide  {
+   
+    animation-name: slide1;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0.2s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+    
+  }
+  
+  @keyframes slide1 {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .about {
+    position: relative;
+    color: honeydew;
+    animation-name: about;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0.2s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  @keyframes about {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .skill {
+  position: relative;
+  color: khaki;
+  animation-name: skill;
+  animation-duration: 4s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0.2s; 
+  animation-iteration-count: 1; 
+  animation-direction: normal; 
+  animation-fill-mode: forwards; 
+  font-family: 'Prompt', sans-serif;
+  }
+  
+  @keyframes skill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+  }
+  
+  .contact {
+  position: relative;
+  color: lemonchiffon;
+  animation-name: contact;
+  animation-duration: 4s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0.2s; 
+  animation-iteration-count: 1; 
+  animation-direction: normal; 
+  animation-fill-mode: forwards; 
+  font-family: 'Prompt', sans-serif;
+  }
+  
+  @keyframes contact {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  
+  h3{
+    opacity: 0;
+    color: rgb(0, 238, 255);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 600px;
+    font-size: 150px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  
+  #homelink{
+    position: relative;
+    left: 5%;
+    bottom: 300px;
+  }
+  
+  #aboutlink{
+  position: relative;
+  left: 5%;
+  bottom: 250px;
+  }
+  
+  
+  #skilllink{
+    position: relative;
+    left: 5%;
+    bottom: 200px;
+  }
+  
+  #contactlink{
+    position: relative;
+    left: 5%;
+    bottom: 150px;
+  }
