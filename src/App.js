@@ -21,13 +21,13 @@ class Portfolio extends Component{
     judge() {
         if (this.state.slide == null){
             return null
-        } else if (this.state.slide == 0) {
+        } else if (this.state.slide === 0) {
             return null
-        } else if (this.state.slide == 1) {
+        } else if (this.state.slide === 1) {
             return 'about'
-        } else if (this.state.slide == 2) {
+        } else if (this.state.slide === 2) {
             return 'works'
-        } else if (this.state.slide == 3) {
+        } else if (this.state.slide === 3) {
             return 'contact'
 
         }
