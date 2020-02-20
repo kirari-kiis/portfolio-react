@@ -3,8 +3,11 @@ import PropTypes from 'prop-types'
 import './index.css'
 import homeUrl from './images/HOME.png'
 import aboutUrl from './images/ABOUT.png'
-import skillUrl from './images/SKILL.png'
+import worksUrl from './images/WORKS.png'
 import contactUrl from './images/CONTACT.png'
+import About from './about/about';
+import Works from './works/works';
+import Contact from './contact/contact';
 
 class Portfolio extends Component{
     constructor(props) {
@@ -19,13 +22,14 @@ class Portfolio extends Component{
         if (this.state.slide == null){
             return null
         } else if (this.state.slide == 0) {
-            return 'home'
+            return null
         } else if (this.state.slide == 1) {
             return 'about'
         } else if (this.state.slide == 2) {
-            return 'skill'
+            return 'works'
         } else if (this.state.slide == 3) {
             return 'contact'
+
         }
     }
 
@@ -33,28 +37,34 @@ class Portfolio extends Component{
 
     render() {
         return (
-            <div id='slide'>
+            <div >
             <div id='top'>
             <p id='name'>KIRARI INAOKA</p>
-            <i className="fab fa-facebook fa-2x"><a id="facebook" href="#"></a></i>
-            <i className="fab fa-twitter fa-2x"><a id="twitter" href="#"></a></i>
-            <i className="fab fa-github fa-2x"><a id="github" href="#"></a></i>
+            <div id="mark-top">
+            <a id="facebook" href="#"><i className="fab fa-facebook fa-2x"></i></a>
+                <a id="twitter" href="https://twitter.com/ral08652385"><i className="fab fa-twitter fa-2x"></i></a>
+                <a id="github" href="https://github.com/kirari-kiis"><i className="fab fa-github fa-2x"></i></a>
+            </div>
             <h1>Portfolio</h1>
+            <p　id="topp">エンジニアを目指す学生のポートフォリオです。
+            </p>
             <p id="topright">I'm in The Kyushu Institute of Information Sciences</p>
-            <div id='btn_wrapper'><a href="#about" className="btn-gradient-simple">BUTTON</a></div>
+            <div id='btn_wrapper'><a href="#profile" className="btn-gradient-simple">Go!</a></div>
             <LinkButton actionSlide={(entry) => this.slide(entry)} />
             
-                <div id='about'>
-                    <h2>profile</h2>
-                    <h3 className={this.judge()}>ABOUT</h3>
+                <div className='wrapper_about' id='inline'>
+                    <h3 className={this.judge()} id="aboutlogo">About</h3>
+                    <About />
                 </div>
-                <div id='skill'>
-                    <h2>skill</h2>
-                    <h3 className={this.judge()}>SKILL</h3>
+                <div className="parallax-bg img-bg-01" id="inline"></div>
+                <div className='wrapper_work' id='inline'>
+                    <h3 className={this.judge()}id="workslogo">Works</h3>
+                    <Works />
                 </div>
-                <div id='contact'>
-                    <h2>contact</h2>
-                    <h3 className={this.judge()}>CONTACT</h3>
+                <div className="parallax-bg img-bg-02" id="inline"></div>
+                <div className='wrapper_contact' id='inline'>
+                    <h3 className={this.judge()}id="contactlogo">Contact</h3>
+                    <Contact />
                 </div>
                 </div>
             </div> 
@@ -66,8 +76,8 @@ const LinkButton = (props) => {
     return (
         <div>
             <a id='homelink' href='#back' onClick={() => props.actionSlide(0)}><img src={homeUrl} alt='' /></a><br/>
-            <a id='aboutlink' href='#about' onClick={() => props.actionSlide(1)}><img src={aboutUrl} alt='' /></a><br/>
-            <a id='skilllink' href='#skill' onClick={() => props.actionSlide(2)}><img src={skillUrl} alt='' /></a><br/>
+            <a id='aboutlink' href='#profile' onClick={() => props.actionSlide(1)}><img src={aboutUrl} alt='' /></a><br/>
+            <a id='workslink' href='#works' onClick={() => props.actionSlide(2)}><img src={worksUrl} alt='' /></a><br/>
             <a id='contactlink' href='#contact' onClick={() => props.actionSlide(3)}><img src={contactUrl} alt='' /></a><br/>
         </div>
     )
@@ -75,6 +85,8 @@ const LinkButton = (props) => {
 LinkButton.propTypes = {
     actionSlide: PropTypes.func
 }
+
+
 
 
 
