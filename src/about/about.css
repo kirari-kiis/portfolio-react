@@ -37,16 +37,21 @@
     text-align: left;
     font-size: 15px;
 }
+#profile > p{
+    color: white;
+}
 
 #prologo{
     font-size: 20px;
     font-family: 'Prompt', sans-serif;
     letter-spacing: 5px;
+    color: white;
 }
 
 #skilllogo{
     font-size: 20px;
     font-family: 'Prompt', sans-serif;
     letter-spacing: 5px;
+    color: white;
 }
 
