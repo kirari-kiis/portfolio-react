@@ -53,17 +53,17 @@ class Portfolio extends Component{
             <LinkButton actionSlide={(entry) => this.slide(entry)} />
             
                 <div className='wrapper_about' id='inline'>
-                    <h3 className={this.judge()} id="aboutlogo">About</h3>
+                    <h3 id="aboutlogo">About</h3>
                     <About />
                 </div>
                 <div className="parallax-bg img-bg-01" id="inline"></div>
                 <div className='wrapper_work' id='inline'>
-                    <h3 className={this.judge()}id="workslogo">Works</h3>
+                    <h3 id="workslogo">Works</h3>
                     <Works />
                 </div>
                 <div className="parallax-bg img-bg-02" id="inline"></div>
                 <div className='wrapper_contact' id='inline'>
-                    <h3 className={this.judge()}id="contactlogo">Contact</h3>
+                    <h3 id="contactlogo">Contact</h3>
                     <Contact />
                 </div>
                 </div>
