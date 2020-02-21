@@ -25,7 +25,7 @@ const Works = () =>{
             <div id="this">
                 <a href="https://infinite-garden-59697.herokuapp.com/"><img src={THIS} alt='' width='300' height='180'/></a>
                 <p>Portfolio</p>
-                <p>ポートフォリオをReactで制作。随時更新中。react-springを導入予定。
+                <p>ポートフォリオをReactで制作。随時更新中。今後react-springを導入予定。
                 </p>
                 
             </div>
