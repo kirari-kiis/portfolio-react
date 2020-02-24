@@ -2,18 +2,46 @@
 
 #skill{
     text-align: center;
-    overflow: auto;
+    overflow: scroll;
     height: 100vh;
 }
+
+
+
 
 #profile{
     top: 100px;
     position: relative;
-    left: 10%;
     padding: 30px;
-    width: 100%;
+    
     
 }
+
+@media screen and (min-width:0px){
+    #profile {
+        left: 1%;
+    }
+  }
+
+  @media screen and (min-width:300px){
+    #profile > p {
+        left: 10%;
+    }
+  }
+
+@media screen and (min-width:0px){
+    #profile > p {
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (min-width:300px){
+    #profile > p {
+        font-size: 15px;
+    }
+  }
+
+
 
 #proc{
     position: relative;
@@ -37,13 +65,13 @@
 
 @media screen and (min-width:0px){
     #list {
-        height: 300px;
+        height: 200px;
     }
   }
 
   @media screen and (min-width:300px){
     #list {
-        height: 350px;
+        height: 300px;
     }
   }
 
@@ -74,5 +102,10 @@
     font-family: 'Prompt', sans-serif;
     letter-spacing: 5px;
     color: white;
+}
+
+
+h4{
+ margin: 0em;   
 }
 
