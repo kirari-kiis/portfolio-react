@@ -2,6 +2,8 @@
 
 #skill{
     text-align: center;
+    overflow: auto;
+    height: 100vh;
 }
 
 #profile{
@@ -20,11 +22,11 @@
     height: 600px;
     bottom: 100px;
     z-index: 1;
+    margin-bottom: 5px;
 }
 
 #list{
     background-color: white;
-    height: 350px;
     width: 200px;
     display: inline-block; 
     text-align: center;
@@ -33,10 +35,29 @@
     vertical-align: top; 
 }
 
-#list > p{
-    text-align: left;
-    font-size: 15px;
-}
+@media screen and (min-width:0px){
+    #list {
+        height: 300px;
+    }
+  }
+
+  @media screen and (min-width:300px){
+    #list {
+        height: 350px;
+    }
+  }
+
+@media screen and (min-width:0px){
+    #list > p{
+        font-size: 8px;
+    }
+  }
+
+@media screen and (min-width:300px){
+    #list > p{
+        font-size: 15px;
+    }
+  }
 #profile > p{
     color: white;
 }

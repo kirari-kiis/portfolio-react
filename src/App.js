@@ -49,7 +49,7 @@ class Portfolio extends Component{
             <p　id="topp">エンジニアを目指す学生のポートフォリオです。
             </p>
             <p id="topright">I'm in The Kyushu Institute of Information Sciences</p>
-            <div id='btn_wrapper'><a href="#profile" className="btn-gradient-simple">Scroll</a></div>
+            <div id='btn_wrapper'><a href="#profile" className="btn-gradient-simple">Profile</a></div>
             <LinkButton actionSlide={(entry) => this.slide(entry)} />
             
                 <div className='wrapper_about' id='inline'>
