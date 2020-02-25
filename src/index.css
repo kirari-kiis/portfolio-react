@@ -498,12 +498,12 @@ h1{
   .img-bg-01{
     background-image: url('./images/about-back.png');
     margin: 0;
-    background-size: 600px 400px;
+    background-size: 1200px 800px;
 }
 
 .img-bg-02{
   background-image: url('./images/code.png');
-  background-size: 600px 400px;
+  background-size: 1200px 800px;
 }
 }
 
