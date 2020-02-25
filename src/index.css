@@ -498,13 +498,12 @@ h1{
   .img-bg-01{
     background-image: url('./images/about-back.png');
     margin: 0;
-    height: 400px;
-    width: 600px;
-  }
-  .img-bg-02{
-    background-image: url('./images/code.png');
-    height: 400px;
-    width: 600px;
+    background-size: 600px 400px;
+}
+
+.img-bg-02{
+  background-image: url('./images/code.png');
+  background-size: 600px 400px;
 }
 }
 
@@ -512,4 +511,14 @@ h1{
   .link{
     visibility:none;
   }
+  .img-bg-01{
+    background-image: url('./images/about-back.png');
+    margin: 0;
+    background-size: auto;
+}
+.img-bg-02{
+background-image: url('./images/code.png');
+background-size: cover;
+margin: 0;
+}
 }
