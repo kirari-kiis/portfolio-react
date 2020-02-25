@@ -6,7 +6,6 @@ h1{
     color:white;
     position: relative;
     margin: 0 auto;
-    margin-top: 150px;
     font-family: 'Sacramento', cursive;
   }
 
@@ -14,13 +13,15 @@ h1{
     h1 {
         font-size: 70px;
         width: 210px;
+        margin-top: 100px;
     }
   }
 
-  @media screen and (min-width:300px){
+  @media screen and (min-width:479px){
     h1 {
         font-size: 150px;
         width: 500px;
+        margin-top: 150px;
     }
   }
 
@@ -30,7 +31,7 @@ h1{
     }
   }
 
-  @media screen and (min-width:300px){
+  @media screen and (min-width:479px){
     #topp {
       font-size: 15px;
   }
@@ -45,20 +46,42 @@ h1{
     height: 45%;
   }
 
-  i{
-    color: #FFF;
-    position: relative;
-    padding: 10px;
-    display: block;
+  
+
+  @media screen and (min-width:0px){
+    i{
+      display: inline-block;
+      color: #FFF;
+    }
   }
 
-  #mark-top{
-    position: absolute;
-    width: 50px;
-    height: 100px;
-    right: 140px;
+  @media screen and (min-width:479px){
+    i{
+      color: #FFF;
+      position: relative;
+      padding: 10px;
+      display: block;
+    }
   }
 
+  @media screen and (min-width:0px){
+    #mark-top{
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      right: 0px;
+      top: 50px;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #mark-top{
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      right: 140px;
+    }
+  }
   
   
   #mark-top > a{
@@ -67,17 +90,33 @@ h1{
     height: 25px;
   }
 
-  #topright{
-    position: absolute;
-    right: 125px;
-    writing-mode: vertical-rl;
-    font-size: 20px;
-    font-family: 'Prompt', sans-serif;
-    color: #FFF;
-    height: 500px;
-    position: absolute;
-    top: 400px;
-    z-index: 3;
+  @media screen and (min-width:0px){
+    #topright{
+      position: absolute;
+      font-size: 10px;
+      font-family: 'Prompt', sans-serif;
+      color: #FFF;
+      width: 300px;
+      position: absolute;
+      top: 450px;
+      z-index: 3;
+      display: none;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #topright{
+      position: absolute;
+      right: 125px;
+      writing-mode: vertical-rl;
+      font-size: 20px;
+      font-family: 'Prompt', sans-serif;
+      color: #FFF;
+      height: 500px;
+      position: absolute;
+      top: 400px;
+      z-index: 3;
+    }
   }
 
   #btn_wrapper{
@@ -115,11 +154,23 @@ h1{
     background-image: linear-gradient(45deg, #709dff 50%, #b0c9ff 100%);
   }
   
-  #wrapper{
-    height: 4100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    overflow: hidden;
+
+  @media screen and (min-width:0px){
+    #wrapper{
+      height: 3700px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #wrapper{
+      height: 4100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      overflow: hidden;
+    }
   }
   
   #topp{
@@ -127,13 +178,26 @@ h1{
     text-align: center;
   }
 
-  #back{
-    background: url(./images/top.jpg) no-repeat;
-    background-size:cover;
-    width: 100%;
-    height: 4100px;
-    background-attachment: fixed;
-    margin: 0;
+  @media screen and (min-width:0px){
+    #back{
+      background: url(./images/top.jpg) no-repeat;
+      background-size:cover;
+      width: 100%;
+      height: 3500px;
+      background-attachment: fixed;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #back{
+      background: url(./images/top.jpg) no-repeat;
+      background-size:cover;
+      width: 100%;
+      height: 4100px;
+      background-attachment: fixed;
+      margin: 0;
+    }
   }
   
   #name{
@@ -151,7 +215,7 @@ h1{
     }
   }
 
-  @media screen and (min-width:300px){
+  @media screen and (min-width:479px){
     #name {
       position: relative;
       left: 13%;
@@ -163,18 +227,27 @@ h1{
     }
   }
   
-  #top{
-    
-    width: 100%;
-    height: 700px;
-    
+
+
+  @media screen and (min-width:0px){
+    #top{
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #top{
+      width: 100%;
+      height: 700px;
+    }
   }
   
   .wrapper_about{
     
     background: none;
     width: 100%;
-    height: 1200px;
+    height: 1250px;
     margin-top: 200px;
     
   }
@@ -182,7 +255,7 @@ h1{
   .wrapper_work{
     background-color: #eeb6b7;
     width: 100%;
-    height: 700px;
+    height: 730px;
     padding-top: 10px;
   }
   
@@ -293,32 +366,79 @@ h1{
   h3{
     opacity: 1;
     color: white;
-    width: 600px;
-    font-size: 150px;
     text-align: justify;
     z-index: 20;
     font-family: 'Sacramento', cursive;
     margin: 0;
   }
 
+  @media screen and (min-width:0px){
+    h3 {
+        width: 250px;
+        font-size: 50px;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    h3 {
+      width: 600px;
+      font-size: 150px;
+    }
+  }
+
   #aboutlogo{
     position: absolute;
     left: 60%;
-    
   }
 
-  #workslogo{
-    position: absolute;
-    top: 400px;
-    left: 100px;
+  @media screen and (min-width:0px){
+    #aboutlogo{
+      position: absolute;
+      left: 0;
+      top: -50px;
+    }
   }
 
-  #contactlogo{
-    position: relative;
-    left: 50px;
-    top: 50px;
+  @media screen and (min-width:479px){
+    #aboutlogo{
+      position: absolute;
+      left: 60%;
+    }
   }
+
+  @media screen and (min-width:0px){
+    #workslogo{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #workslogo{
+      position: absolute;
+      top: 400px;
+      left: 100px;
+    }
+  }
+
+
   
+  @media screen and (min-width:0px){
+    #contactlogo{
+      position: relative;
+      
+    }
+  }
+
+  @media screen and (min-width:479px){
+    #contactlogo{
+      position: relative;
+      left: 50px;
+      top: 50px;
+    }
+  }
 
   #homelink{
     position: relative;
@@ -368,4 +488,17 @@ h1{
 
   .img-bg-02{
     background-image: url('./images/code.png');
+}
+
+@media screen and (min-width:0px){
+  .link{
+    visibility:hidden;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width:479px){
+  .link{
+    visibility:none;
+  }
 }

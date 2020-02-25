@@ -23,7 +23,7 @@
     }
   }
 
-  @media screen and (min-width:300px){
+  @media screen and (min-width:479px){
     #profile > p {
         left: 10%;
     }
@@ -35,7 +35,7 @@
     }
   }
 
-  @media screen and (min-width:300px){
+  @media screen and (min-width:479px){
     #profile > p {
         font-size: 15px;
     }
@@ -69,7 +69,7 @@
     }
   }
 
-  @media screen and (min-width:300px){
+  @media screen and (min-width:479px){
     #list {
         height: 300px;
     }
@@ -81,7 +81,7 @@
     }
   }
 
-@media screen and (min-width:300px){
+@media screen and (min-width:479px){
     #list > p{
         font-size: 15px;
     }
