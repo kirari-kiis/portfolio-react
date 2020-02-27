@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  overflow: scroll;
 }
 
 h1{
@@ -11,29 +12,37 @@ h1{
 
   @media screen and (min-width:0px){
     h1 {
+        position: relative;
         font-size: 70px;
         width: 210px;
         margin-top: 100px;
+        top: 50px;
     }
   }
 
   @media screen and (min-width:479px){
     h1 {
+      position: relative;
         font-size: 150px;
         width: 500px;
         margin-top: 150px;
+        top: 50px;
     }
   }
 
   @media screen and (min-width:0px){
     #topp {
         font-size: 10px;
+        position: relative;
+        top: 50px;
     }
   }
 
   @media screen and (min-width:479px){
     #topp {
       font-size: 15px;
+      position: relative;
+      top: 50px;
   }
   }
   
@@ -44,6 +53,7 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     height: 45%;
+
   }
 
   
@@ -97,7 +107,7 @@ h1{
       font-family: 'Prompt', sans-serif;
       color: #FFF;
       width: 300px;
-      top: 450px;
+      top: 400px;
       z-index: 3;
       visibility: hidden;
     }
@@ -112,7 +122,7 @@ h1{
       font-family: 'Prompt', sans-serif;
       color: #FFF;
       height: 500px;
-      top: 400px;
+      top: 300px;
       z-index: 3;
       visibility: visible;
     }
@@ -120,6 +130,8 @@ h1{
 
   #btn_wrapper{
     text-align: center;
+    position: relative;
+    top: 50px;
   }
 
   
@@ -157,18 +169,17 @@ h1{
   @media screen and (min-width:0px){
     #wrapper{
       height: 3700px;
-      
       padding-bottom: 50px;
-      overflow: hidden;
+      
     }
   }
 
   @media screen and (min-width:479px){
     #wrapper{
       height: 4100px;
-      
+      position: relative;
       padding-bottom: 50px;
-      overflow: hidden;
+      
     }
   }
   
@@ -185,7 +196,7 @@ h1{
       height: 3500px;
       background-attachment: fixed;
       margin: 0;
-      padding-top: 50px;
+      
     }
   }
 
@@ -197,7 +208,7 @@ h1{
       height: 4100px;
       background-attachment: fixed;
       margin: 0;
-      padding-top: 50px;
+      
     }
   }
   
@@ -213,6 +224,7 @@ h1{
         font-size: 15px;
         letter-spacing: 2px;
         left: 3%;
+        top: 50px;
     }
   }
 
@@ -220,7 +232,7 @@ h1{
     #name {
       position: relative;
       left: 13%;
-      top: 0px;
+      top: 50px;
       width: 500px;
       font-size: 20px;
       letter-spacing: 5px;
@@ -232,6 +244,7 @@ h1{
 
   @media screen and (min-width:0px){
     #top{
+      position: relative;
       width: 100%;
       height: 400px;
     }
@@ -239,6 +252,7 @@ h1{
 
   @media screen and (min-width:479px){
     #top{
+      position: relative;
       width: 100%;
       height: 700px;
     }
@@ -444,26 +458,26 @@ h1{
   #homelink{
     position: relative;
     left: 10%;
-    bottom: 350px;
+    bottom: 320px;
   }
   
   #aboutlink{
   position: relative;
   left:  10%;
-  bottom: 280px;
+  bottom: 250px;
   }
   
   
   #workslink{
     position: relative;
     left: 10%;
-    bottom: 210px;
+    bottom: 180px;
   }
   
   #contactlink{
     position: relative;
     left: 10%;
-    bottom: 140px;
+    bottom: 110px;
   }
 
   #inline{
