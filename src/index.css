@@ -97,10 +97,9 @@ h1{
       font-family: 'Prompt', sans-serif;
       color: #FFF;
       width: 300px;
-      position: absolute;
       top: 450px;
       z-index: 3;
-      display: none;
+      visibility: hidden;
     }
   }
 
@@ -113,9 +112,9 @@ h1{
       font-family: 'Prompt', sans-serif;
       color: #FFF;
       height: 500px;
-      position: absolute;
       top: 400px;
       z-index: 3;
+      visibility: visible;
     }
   }
 
@@ -158,7 +157,7 @@ h1{
   @media screen and (min-width:0px){
     #wrapper{
       height: 3700px;
-      padding-top: 50px;
+      
       padding-bottom: 50px;
       overflow: hidden;
     }
@@ -167,7 +166,7 @@ h1{
   @media screen and (min-width:479px){
     #wrapper{
       height: 4100px;
-      padding-top: 50px;
+      
       padding-bottom: 50px;
       overflow: hidden;
     }
@@ -186,6 +185,7 @@ h1{
       height: 3500px;
       background-attachment: fixed;
       margin: 0;
+      padding-top: 50px;
     }
   }
 
@@ -197,6 +197,7 @@ h1{
       height: 4100px;
       background-attachment: fixed;
       margin: 0;
+      padding-top: 50px;
     }
   }
   
@@ -509,7 +510,8 @@ h1{
 
 @media screen and (min-width:479px){
   .link{
-    visibility:none;
+    visibility:visible;
+    height: 400px;
   }
   .img-bg-01{
     background-image: url('./images/about-back.png');

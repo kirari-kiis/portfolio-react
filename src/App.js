@@ -82,7 +82,7 @@ class Portfolio extends Component{
 const LinkButton = (props) => {
     return (
         <div className="link">
-            <a id='homelink' href='#back' onClick={() => props.actionSlide(0)}><img src={homeUrl} alt='' /></a><br/>
+            <a id='homelink' href='#root' onClick={() => props.actionSlide(0)}><img src={homeUrl} alt='' /></a><br/>
             <a id='aboutlink' href='#profile' onClick={() => props.actionSlide(1)}><img src={aboutUrl} alt='' /></a><br/>
             <a id='workslink' href='#works' onClick={() => props.actionSlide(2)}><img src={worksUrl} alt='' /></a><br/>
             <a id='contactlink' href='#contact' onClick={() => props.actionSlide(3)}><img src={contactUrl} alt='' /></a><br/>
